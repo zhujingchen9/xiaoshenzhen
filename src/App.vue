@@ -7,7 +7,7 @@
   </div>
 </template>
 <script>
-// import goods from './components/Goods'
+// import Goods from './components/Goods'
 export default {
   data () {
     return {
@@ -19,7 +19,7 @@ export default {
   methods: {
   },
   components: {
-    // 'goods': goods
+    // 'goods': Goods
   }
 }
 </script>

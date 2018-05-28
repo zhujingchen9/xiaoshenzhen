@@ -12,7 +12,7 @@
 						<h3 class="goods-title">{{goods.name}}</h3>
 					</a>
 					<p class="goods-price">
-						<font color="black" size="2">开始时间：</font>	{{item.time*1000 | datefmt ('YYYY-MM-DD HH:mm:ss')}}
+						<font color="black" size="2">开始时间：</font>	{{item.time * 1000 | datefmt ('YYYY-MM-DD HH:mm:ss')}}
 						<!-- <span
 							v-if="goods.discountType === 'discount'"
 							class="old-price">

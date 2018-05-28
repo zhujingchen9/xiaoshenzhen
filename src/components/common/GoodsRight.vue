@@ -2,8 +2,7 @@
 	<div class="goods-right">
 		<ul class="goods-right-content">
 			<template
-				v-for="goods in currGoods"
-				v-if="$index < currGoods.length">
+				v-for="goods in currGoods">
 				<li class="goods-right-item">
 					<span class="discount-label"
 						:class="goods.discountType">{{goods.discount}}</span>
@@ -12,7 +11,7 @@
 						<h3 class="goods-title">{{goods.name}}</h3>
 					</a>
 					<p class="goods-price">
-						<font color="black" size="2">开始时间：</font>	{{item.time*1000 | datefmt ('YYYY-MM-DD HH:mm:ss')}}
+						<font color="black" size="2">开始时间：</font>	{{goods.time*1000 | datefmt ('YYYY-MM-DD HH:mm:ss')}}
 						<!-- <span
 							v-if="goods.discountType === 'discount'"
 							class="old-price">

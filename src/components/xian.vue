@@ -14,7 +14,7 @@
 			<div class="login-wrap" id="login-wrap" style=" text-align:center;border:1px solid #f5f5f5;display:none;position:fixed;z-index:100000000;background-color:white;left:35%;" >
 				<!-- 登陆 -->
 					<p v-show="showTishi">{{tishi}}</p>
-					<div class="alertModel" style=" width:auto;height:50px;text-align:center;border:1px solid rgb(130,137,137);display:none;position:fixed;z-index:1000000000;background-color:#F5F5F5;left:39%;right:37%;top:40%" v-on:click="moveAlert" >
+					<div class="alertModel" style=" width:auto;height:50px;text-align:center;border:1px solid rgb(130,137,137);display:none;position:fixed;z-index:1000000000;background-color:#F5F5F5;left:39%;right:37%;top:40%">
 						<ul style="line-height:50px;margin-right:25px;">
 							<li><span></span></li>
 						</ul>
@@ -30,7 +30,7 @@
 			<!-- 修改密码获取验证码 -->
 			<div class="forGot-wrap" id="forGot-wrap" v-show="showRegister" style="border:1px solid #f5f5f5;display:none;position:fixed;z-index:100000000;background-color:white;left:35%;" >
 					<p v-show="showTishi"></p>
-					<div class="alertModel" style=" width:auto;height:50px;text-align:center;border:1px solid rgb(130,137,137);display:none;position:fixed;z-index:1000000000;background-color:#F5F5F5;left:38%;right:35%;top:36%" v-on:click="moveAlert" >
+					<div class="alertModel" style=" width:auto;height:50px;text-align:center;border:1px solid rgb(130,137,137);display:none;position:fixed;z-index:1000000000;background-color:#F5F5F5;left:38%;right:35%;top:36%" >
 						<ul style="line-height:50px;margin-right:25px;">
 							<li><span></span></li>
 						</ul>
@@ -45,14 +45,13 @@
 			<!-- 修改密码 -->
 			<div class="forGotedit-wrap" id="forGotedit-wrap" style="border:1px solid #f5f5f5;display:none;position:fixed;z-index:100000000;background-color:white;left:35%;" >
 					<p v-show="showTishi">{{tishi}}</p>
-					<div class="alertModel" style=" width:auto;height:50px;text-align:center;border:1px solid rgb(130,137,137);display:none;position:fixed;z-index:1000000000;background-color:#F5F5F5;left:35%;right:35%;top:40%" v-on:click="moveAlert" >
+					<div class="alertModel" style=" width:auto;height:50px;text-align:center;border:1px solid rgb(130,137,137);display:none;position:fixed;z-index:1000000000;background-color:#F5F5F5;left:35%;right:35%;top:40%" >
 						<ul style="line-height:50px;margin-right:25px;">
 							<li><span></span></li>
 						</ul>
 					</div>
 					<ul>
 						<li style="margin-left:40%;"><h3>修改密码</h3></li>
-						<!-- <li><input type="text" id="ftel1" placeholder="请输入你的手机号/邮箱" v-model="username"></li> -->
 						<li ><input type="password" id="fPassWord" placeholder="请输入密码" ></li>
 						<li ><input type="password" id="frePassWord" placeholder="请再次输入密码" ></li>
 						<li><button style="cursor:pointer;" v-on:click="forGotEdit">确认修改</button></li>
@@ -62,7 +61,7 @@
 			<div class="register-wrap" id="register-wrap" v-show="showRegister" style="border:1px solid #f5f5f5;display:none;position:fixed;z-index:100000000;background-color:white;left:35%;" >
 
 					<p v-show="showTishi">{{tishi}}</p>
-					<div class="alertModel" style=" width:auto;height:50px;text-align:center;border:1px solid rgb(130,137,137);display:none;position:fixed;z-index:1000000000;background-color:#F5F5F5;left:38%;right:35%;top:36%" v-on:click="moveAlert" >
+					<div class="alertModel" style=" width:auto;height:50px;text-align:center;border:1px solid rgb(130,137,137);display:none;position:fixed;z-index:1000000000;background-color:#F5F5F5;left:38%;right:35%;top:36%">
 						<ul style="line-height:50px;margin-right:25px;">
 							<li><span></span></li>
 						</ul>

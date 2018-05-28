@@ -6,11 +6,11 @@
 			<div class="header-navs">
 				<ul class="navs">
 					<li v-for="item in navs" class="nav">
-						<template v-if="item.type">
+						<template >
 							<a href="javascript: void(0);" class="nav-item"
 							><span @mouseenter="evtHeaderEnter(item.type,item.name)" >{{item.name}}</span></a>
 						</template>
-						<template v-else>
+						<template>
 							<a :href="item.sourceUrl" target="_blank" class="nav-item">{{item.name}}</a>
 						</template>
 						<input type="hidden" name="type" id="searchType" value="">
@@ -35,7 +35,7 @@
 				</label>
 				<ul id="sc" style="display:block;" class="search-result clearfix">
 					<li v-for="item in results">
-            	<a :href="www.baidu.com" @click='btnClick (item.name)' ><span>{{item.name}}</span></a>
+            	<a :href="" @click='btnClick (item.name)' ><span>{{item.name}}</span></a>
 						<span class="item-num">约有{{item.number}}件</span>
 					</li>
 				</ul>
